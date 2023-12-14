@@ -1,0 +1,15 @@
+@mixin light-text{
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+}
+
+@mixin bold-text{
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 700;
+}
+
+@mixin flex{
+    display: flex;
+    align-items: center;
+}
+
