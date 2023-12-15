@@ -1,7 +1,8 @@
-# Vue 3 + Vite
+<h1>Написать SPA на Vue 2+ с простой и функциональной адаптивной версткой.</h1>
+<p>Для глобального стейта использовать vuex, для навигации vue-router.</p>
+<p>Для работы со стилями использовать SCSS.</p>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Приложение должно состоять из 2 экранов:
+1) Список пользователей
+2) Страница конкретного пользователя, которая содержит список альбомов и список постов пользователя. Каждый элемент списка альбомов это карусель с первыми 5 фото из этого альбома.
+3) Добавить возможность делать ссылки на страницу конкретного пользователя с параметром, какую страницу открыть "список альбомов" или "список постов"
