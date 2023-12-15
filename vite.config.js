@@ -6,7 +6,7 @@ import vuetify from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: '/polis812/',
+	base: 'https://yanastvl.github.io/polis812/',
 	plugins: [
 		vue(),
 		vuetify({ autoImport: true }),
