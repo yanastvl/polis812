@@ -30,6 +30,16 @@
 <style lang="scss" scoped>
 a{
     text-decoration: none;
+    color: black;
+}
+a:hover{
+  color: #60abd0;
+}
+a:active {
+  color: rgb(41, 41, 204);
+}
+a:visited {
+  color: rgb(61, 61, 116);
 }
 
 .v-btn{

@@ -4,7 +4,7 @@
 
     <v-dialog>
         <template v-slot:activator="{ props }">
-            <v-btn class="bg-primary" v-bind="props" text="Создать пост"> </v-btn>
+            <v-btn class="bg-grey create" v-bind="props" text="Создать пост"> </v-btn>
         </template>
 
         <template v-slot:default="{ isActive }">
@@ -42,6 +42,29 @@
     >{{ this.posts }}></Posts>
     </div>
 </template>
+
+<style lang="scss">
+.create{
+    margin-top:10px;
+    margin-left: percentage(465/ 1920);
+    margin-right: percentage(465/ 1920);
+    @media (max-width: 1200px) {
+        margin-left: percentage(105/ 1200);
+        margin-right: percentage(105/ 1200);
+    }
+    
+    @media (max-width: 992px) {
+        margin-left: percentage(32/ 992);
+        margin-right: percentage(32/ 992);
+    }
+
+    @media (max-width: 576px) {
+        margin-left: percentage(12/ 576);
+        margin-right: percentage(12/ 576);
+    }
+}
+
+</style>
 
 <script>
 import Header from "../components/Header.vue";

@@ -1,7 +1,7 @@
 <template>
     <carousel :items-to-show="1">
       <slide v-for="photo in photos" :key="photo.id">
-          <img :id=setPhotoId(photo.id) style="width:100px; height:100px" alt="img">
+          <img :id=setPhotoId(photo.id) style="width:200px; height:200px" alt="img">
       </slide>
       <template #addons>
         <Pagination />

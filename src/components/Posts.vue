@@ -5,7 +5,7 @@
         <div>
             <v-dialog>
                 <template v-slot:activator="{ props }">
-                    <v-btn class="bg-primary" v-bind="props" text="Редактировать"> </v-btn>
+                    <v-btn class="bg-grey edit" v-bind="props" text="Редактировать"> </v-btn>
                 </template>
 
                 <template v-slot:default="{ isActive }">
@@ -77,7 +77,7 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-
+    padding-bottom: 5px;
     padding-top: 20px;
     border-bottom: 1px solid #EAF2FD;
     @media (max-width: 1200px) {
@@ -95,7 +95,6 @@
         margin-right: percentage(12/ 576);
     }
 }
-
 .posts__title{
     font-weight: 700;
     line-height: 22px;
@@ -104,11 +103,15 @@
     font-weight: 400;
     line-height: 24px;
 }
+.edit{
+    margin-right: 10px;
+}
 </style>
 <script>
 import { mapGetters, mapActions } from 'vuex';
 
 export default {
+    
     data() {
         return {
             title: this.post.title,
