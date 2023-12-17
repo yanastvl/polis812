@@ -9,7 +9,7 @@ import UserAlbums from "./views/UserAlbums.vue"
 import UserPosts from "./views/UserPosts.vue"
 
 const routes = [
-  { path: '/', component: ContactList },
+  { path: '/', name:'index', component: ContactList },
   { path: '/user/:id/posts', name:'UserPosts', component: UserPosts },
   { path: '/user/:id/albums', name:'UserAlbums', component: UserAlbums },
 ]
